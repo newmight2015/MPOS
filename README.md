@@ -6,12 +6,10 @@ MPOS is a web based Mining Portal for various crypto currencies. It was created 
 Requirements
 ============
 
-This setup has been tested on Ubuntu 12.04, Ubuntu 13.04 and CentOS.
-It should also work on any related distribution (RHEL, Debian).
+MPOS has been tested on the following  operating systems - Debian, Ubuntu 12.04, Ubuntu 13.04 and CentOS.
 
-Be aware that `MPOS` is **only** for pooled mining. Solo mining is not
-supported. They will never match an upstream share, solo miners do not create
-any shares, only blocks.
+Be aware that `MPOS` is **only** for pooled mining and solo mining is not
+supported.
 
 * 64-bit system
  * Otherwise some coins will display wrong network hashrates
@@ -31,7 +29,7 @@ any shares, only blocks.
 Features
 ========
 
-The following feature have been implemented so far:
+The following features have been implemented so far:
 
 * Fully re-written GUI with [Smarty][2] templates
  * Full file based template support
