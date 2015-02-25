@@ -25,9 +25,9 @@ for full information.
  * php5-curl
 * MySQL Server
  * mysql-server
-* memcached
-* stratum-mining
-* litecoind
+* Memcached
+* Stratum Mining (stratum-mining, NOMP)
+* Coin Daemon
 
 Features
 ========
@@ -39,10 +39,8 @@ The following feature have been implemented so far:
 * VARDIFF Support
 * Reward Systems
  * Propotional, PPS and PPLNS
-* New Theme
  * Live Dashboard
  * AJAX Support
- * Overhauled API
  * Bootstrap
 * Web User accounts
  * Re-Captcha protected registration form
