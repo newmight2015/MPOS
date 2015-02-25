@@ -21,9 +21,9 @@
             <tr>
               <th>Current Difficulty</th>
               {if ! $GLOBAL.website.chaininfo.disabled}
-              <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new"><span id="b-diff">{$NETWORK.difficulty|number_format:2}</span></a></td>
+              <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new"><span id="b-diff">{$NETWORK.difficulty|number_format:"2"}</span></a></td>
               {else}
-              <td><span id="b-diff">{$NETWORK.difficulty|number_format:"8"}</span></td>
+              <td><span id="b-diff">{$NETWORK.difficulty|number_format:"2"}</span></td>
               {/if}
             </tr>
             <tr>
