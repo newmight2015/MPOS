@@ -7,46 +7,10 @@ Description
 
 MPOS is a web based Mining Portal for various crypto currencies. It was created by [TheSerapher](https://github.com/TheSerapher) and has hence grown quite large. Recently it was migrated into a Github Organization to make development easier. It's a community driven open source project. Support can be requested on IRC at https://webchat.freenode.net/?channels=#mpos - Be **PATIENT** ... People listed in this channel may currently be inactive but most users there have offline logging of messages. They **will** see your questions and answer if they can. Don't join, ask the question and leave. Sit around if you want answers to your questions!
 
-Donations
-=========
-
-Donations to this project are going directly to [TheSerapher](https://github.com/TheSerapher), the original author of this project:
-
-* LTC address: `Lge95QR2frp9y1wJufjUPCycVsg5gLJPW8`
-* BTC address: `1HuYK6WPU8o3yWCrAaADDZPRpL5QiXitfv`
-* DOGE address: `DANk8bnc3vHEf7Jthaxq1Xgn1BSiArNdjG`
-* 42Coin address: `4VxA6Ht59Mj6ikhA4gDXLiHuAaDCJEvYTZ`
-* FST address: `fiRqMgZyhjTN1GSEB3ZxV35JXsE5bjEaQ2`
-* FRK address: `FDcgGZjX2B29qevSuiuQVwXhkNhtQT4cEW`
-* Cryptsy Trade Key: `6ff7292142463b7b80cbbbdfc52334ba89727b11`
-
 Website Footer
 ==============
 
 When you decide to use `MPOS` please be so kind and leave the footer intact. You are not the author of the software and should honor those that have worked on it. Keeping the footer intact helps spreading the word. Leaving the donation address untouched allows miners to donate to the author.
-
-Donors
-======
-
-These people have supported this project with a donation:
-
-* [obigal](https://github.com/obigal)
-* [vias](https://github.com/vias79)
-* [WKNiGHT](https://github.com/WKNiGHT-)
-* [ZC](https://github.com/zccopwrx)
-* Nutnut
-* Caberhagen (http://litecoin-pool.ch)
-* Mining4All (https://www.mining4all.eu/)
-* [xisi](https://github.com/xisi)
-* [PCFiL](https://github.com/PCFiL)
-* [rog1121](https://github.com/rog1121)(https://rapidhash.net)
-* [Wow, Much Pool](http://www.wowmuchpool.com/)
-* webxassDE (https://www.suchcoins.com/)
-
-Pools running MPOS
-==================
-
-You can find a list of active pools [here](https://github.com/TheSerapher/php-mpos/wiki/Pools).
 
 Requirements
 ============
