@@ -52,7 +52,7 @@
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
-                  <p class="h5" id="b-diff">{$NETWORK.difficulty|number_format:"8"}</p>
+                  <p class="h5" id="b-diff">{$NETWORK.difficulty|number_format:"2"}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
                   <p class="h6">Difficulty</p>
@@ -67,7 +67,7 @@
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
-                  <p class="h5" id="b-nextdiff">{if $GLOBAL.nethashrate > 0}{$NETWORK.EstNextDifficulty|number_format:"8"}{else}n/a{/if}</p>
+                  <p class="h5" id="b-nextdiff">{if $GLOBAL.nethashrate > 0}{$NETWORK.EstNextDifficulty|number_format:"2"}{else}n/a{/if}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
                   <p class="h6">Est Next Difficulty{if $GLOBAL.nethashrate > 0}<br/>Change in {$NETWORK.BlocksUntilDiffChange} Blocks{else}No Estimates{/if}</p>
