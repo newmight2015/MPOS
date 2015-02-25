@@ -1,18 +1,16 @@
 Description
 ===========
 
-MPOS is a web based Mining Portal for various crypto currencies. It was created by [TheSerapher](https://github.com/TheSerapher) and has hence grown quite large.
+MPOS is a web based mining portal for various crypto currencies. This repository is a modified version of the original MPOS project created by [TheSerapher](https://github.com/TheSerapher).
 
 Requirements
 ============
 
 MPOS has been tested on the following  operating systems - Debian, Ubuntu 12.04, Ubuntu 13.04 and CentOS.
 
-Be aware that `MPOS` is **only** for pooled mining and solo mining is not
-supported.
+Be aware that `MPOS` is **only** for pooled mining and solo mining is not supported.
 
-* 64-bit system
- * Otherwise some coins will display wrong network hashrates
+* 64-bit operating system
 * Apache2
  * libapache2-mod-php5
 * PHP 5.4+
@@ -23,23 +21,22 @@ supported.
 * MySQL Server
  * mysql-server
 * Memcached
-* Stratum Mining (stratum-mining, NOMP)
-* Coin Daemon
+* Stratum mining software (stratum-mining, NOMP or CoiniumServ)
+* Coin daemon
 
 Features
 ========
 
-The following features have been implemented so far:
+This version of MPOS contains the following features:
 
 * Fully re-written GUI with [Smarty][2] templates
- * Full file based template support
 * VARDIFF Support
 * Reward Systems
  * Propotional, PPS and PPLNS
  * Live Dashboard
  * AJAX Support
  * Bootstrap
-* Web User accounts
+* Web user accounts
  * Re-Captcha protected registration form
 * Worker accounts
  * Worker activity
@@ -68,7 +65,6 @@ The following features have been implemented so far:
  * All scrypt coins
  * All sha256d coins
  * All x11 coins
- * Others may be supported by creating a custom coin class 
 
 Installation
 ============
