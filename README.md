@@ -9,10 +9,9 @@ Requirements
 This setup has been tested on Ubuntu 12.04, Ubuntu 13.04 and CentOS.
 It should also work on any related distribution (RHEL, Debian).
 
-Be aware that `MPOS` is **only** for pooled mining. Solo Mining is not
+Be aware that `MPOS` is **only** for pooled mining. Solo mining is not
 supported. They will never match an upstream share, solo miners do not create
-any shares, only blocks. Expect weird behavior if trying to mix them. See #299
-for full information.
+any shares, only blocks.
 
 * 64-bit system
  * Otherwise some coins will display wrong network hashrates
