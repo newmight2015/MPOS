@@ -122,9 +122,9 @@ $(document).ready(function(){
     } else {
       $('#b-pefficiency').html(number_format(0, 2) + "%");
     }
-    $('#b-diff').html(number_format(data.getdashboarddata.data.network.difficulty, 8));
+    $('#b-diff').html(number_format(data.getdashboarddata.data.network.difficulty, 2));
     if (data.getdashboarddata.data.network.hashrate > 0) {
-      $('#b-nextdiff').html(number_format(data.getdashboarddata.data.network.nextdifficulty, 8));
+      $('#b-nextdiff').html(number_format(data.getdashboarddata.data.network.nextdifficulty, 2));
       $('#b-nextdiffc').html(" Change in " + data.getdashboarddata.data.network.blocksuntildiffchange + " Blocks");
     } else {
       $('#b-nextdiff').html('n/a');
