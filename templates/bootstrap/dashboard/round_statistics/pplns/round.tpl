@@ -52,7 +52,7 @@
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
-                  <p class="h5 up-more" id="b-diff">{$NETWORK.difficulty|number_format:"8"}</p>
+                  <p class="h5 up-more" id="b-diff">{$NETWORK.difficulty|number_format:"2"}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
                   <p class="h6">Difficulty</p>
