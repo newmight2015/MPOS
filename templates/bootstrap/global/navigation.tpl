@@ -66,9 +66,9 @@
                     <li {if $smarty.get.page|default:"0" eq "statistics"}class="active"{/if}>
                         <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Statistics<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                          {acl_check page='statistics' action='pool' name='<i class="fa fa-list-ol fa-fw"></i> Pool' acl=$GLOBAL.acl.pool.statistics fallback='page=statistics'}
+                          {acl_check page='statistics' action='pool' name='<i class="fa fa-dot-circle-o fa-fw"></i> Pool' acl=$GLOBAL.acl.pool.statistics fallback='page=statistics'}
                           {acl_check page='statistics' action='blocks' name='<i class="fa fa-cube fa-fw"></i> Blocks' acl=$GLOBAL.acl.block.statistics}
-                          {acl_check page='statistics' action='round' name='<i class="fa fa-circle-o fa-fw"></i> Round' acl=$GLOBAL.acl.round.statistics}
+                          {acl_check page='statistics' action='round' name='<i class="fa fa-spinner fa-fw"></i> Round' acl=$GLOBAL.acl.round.statistics}
                           {acl_check page='statistics' action='blockfinder' name='<i class="fa fa-search fa-fw"></i> Blockfinder' acl=$GLOBAL.acl.blockfinder.statistics}
                           {acl_check page='statistics' action='uptime' name='<i class="fa fa-clock-o fa-fw"></i> Uptime' acl=$GLOBAL.acl.uptime.statistics}
                           {acl_check page='statistics' action='graphs' name='<i class="fa fa-signal fa-fw"></i> Graphs' acl=$GLOBAL.acl.graphs.statistics}
