@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <h4 class="panel-title"><i class="fa fa-desktop fa-fw"></i> Last Found Blocks</h4>
+        <h4 class="panel-title"><i class="fa fa-cubes fa-fw"></i> Last Found Blocks</h4>
       </div>
       <div class="panel-body no-padding table-responsive">
         <table class="table table-bordered table-hover table-striped"> 
