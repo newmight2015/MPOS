@@ -6,7 +6,7 @@
             <th><span><h5><i class="fa fa-users fa-fw"></i> Pool</h5></span></th>
           </tr>
           <tr>
-            <th><h5><i class="fa fa-smile-o fa-fw"></i> Valid</h5></th>
+            <th><h5><i class="fa fa-check fa-fw"></i> Valid</h5></th>
             <th>
             <div class="progress progress-striped progress-fix">
                <div id="b-yvalid" class="progress-bar progress-bar-success black" style="width: 100%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="{$GLOBAL.userdata.shares.valid|number_format}" role="progressbar">{$GLOBAL.userdata.shares.valid|number_format:$GLOBAL.config.sharediffprecision}</div>
@@ -19,7 +19,7 @@
             </th>
           </tr>
           <tr>
-            <th><h5><i class="fa fa-frown-o fa-fw"></i> Invalid</h5></th>
+            <th><h5><i class="fa fa-times fa-fw"></i> Invalid</h5></th>
             <th>
             <div class="progress progress-striped progress-fix">
                <div id="b-yivalid" class="progress-bar progress-bar-danger black" style="width: 100%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="{$GLOBAL.userdata.shares.invalid|number_format}" role="progressbar">{$GLOBAL.userdata.shares.invalid|number_format:$GLOBAL.config.sharediffprecision}</div>
