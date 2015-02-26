@@ -55,7 +55,7 @@
           <div class="col-md-spark-2 col-sm-6">
             <div class="circle-tile fade">
               <div class="circle-tile-heading lightblue">
-               <i class="fa fa-cog fa-spin fa-fw fa-2x"></i>
+               <i class="fa fa-wrench fa-fw fa-2x"></i>
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
