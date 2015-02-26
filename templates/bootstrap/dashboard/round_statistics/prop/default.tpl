@@ -13,7 +13,7 @@
     <div class="panel panel-info">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <i class="fa fa-cloud fa-fw"></i> Share Information
+          <i class="fa fa-slack fa-fw"></i> Share Information
         </h4>
       </div>
       {assign var=PAYOUT_SYSTEM value=$GLOBAL.config.payout_system}
