@@ -3,7 +3,7 @@
           <div class="col-lg-2 col-sm-6">
             <div class="circle-tile fade">
               <div class="circle-tile-heading lightblue">
-                <i class="fa fa-th-large fa-fw fa-2x"></i>
+                <i class="fa fa-cube fa-fw fa-2x"></i>
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
