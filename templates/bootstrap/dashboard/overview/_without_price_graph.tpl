@@ -37,7 +37,7 @@
           <div class="col-md-spark-2 col-sm-6">
             <div class="circle-tile fade">
               <div class="circle-tile-heading lightblue">
-                <i class="fa fa-share-square fa-fw fa-2x"></i>
+                <i class="fa fa-tachometer fa-fw fa-2x"></i>
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
@@ -55,7 +55,7 @@
           <div class="col-md-spark-2 col-sm-6">
             <div class="circle-tile fade">
               <div class="circle-tile-heading lightblue">
-               <i class="fa fa-truck fa-fw fa-2x"></i>
+               <i class="fa fa-steam fa-fw fa-2x"></i>
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
@@ -72,7 +72,7 @@
           <div class="col-md-spark-2 col-sm-6">
             <div class="circle-tile fade">
               <div class="circle-tile-heading lightblue">
-               <i class="fa fa-h-square fa-fw fa-2x"></i>
+               <i class="fa fa-globe fa-fw fa-2x"></i>
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
