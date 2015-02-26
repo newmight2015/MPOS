@@ -71,7 +71,7 @@
                           {acl_check page='statistics' action='round' name='<i class="fa fa-circle-o fa-fw"></i> Round' acl=$GLOBAL.acl.round.statistics}
                           {acl_check page='statistics' action='blockfinder' name='<i class="fa fa-search fa-fw"></i> Blockfinder' acl=$GLOBAL.acl.blockfinder.statistics}
                           {acl_check page='statistics' action='uptime' name='<i class="fa fa-clock-o fa-fw"></i> Uptime' acl=$GLOBAL.acl.uptime.statistics}
-                          {acl_check page='statistics' action='graphs' name='<i class="fa fa-signal fa-fw"></i> Graphs' acl=$GLOBAL.acl.graphs.statistics}
+                          {acl_check page='statistics' action='graphs' name='<i class="fa fa-line-chart fa-fw"></i> Graphs' acl=$GLOBAL.acl.graphs.statistics}
                           {acl_check page='statistics' action='donors' name='<i class="fa fa-bitbucket fa-fw"></i> Donors' acl=$GLOBAL.acl.donors.page}
                         </ul>
                         <!-- /.nav-second-level -->
