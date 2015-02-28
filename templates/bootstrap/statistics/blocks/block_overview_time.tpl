@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-tasks fa-fw"></i> Block Overview
+        <i class="fa fa-history fa-fw"></i> Block Overview
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">

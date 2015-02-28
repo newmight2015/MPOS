@@ -77,7 +77,7 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li {if $smarty.get.page|default:"0" eq "gettingstarted" || $smarty.get.page|default:"0" eq "about"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-question fa-fw"></i> Help<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-question-circle fa-fw"></i> Help<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                           <li><a href="{$smarty.server.SCRIPT_NAME}?page=gettingstarted"><i class="fa fa-info-circle fa-fw"></i> Getting Started</a></li>
                           {acl_check page='about' action='pool' name='<i class="fa fa-info fa-fw"></i> About' acl=$GLOBAL.acl.about.page}
@@ -87,7 +87,7 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li {if $smarty.get.page|default:"0" eq "register" || $smarty.get.page|default:"0" eq "login" || $smarty.get.page|default:"0" eq "logout" || $smarty.get.page|default:"0" eq "tac" || $smarty.get.page|default:"0" eq "contactform"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-tasks fa-fw"></i> Other<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-asterisk fa-fw"></i> Other<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                           {if $smarty.session.AUTHENTICATED|default:"0" == 1}
                           <li><a href="{$smarty.server.SCRIPT_NAME}?page=logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
