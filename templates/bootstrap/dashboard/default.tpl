@@ -15,10 +15,10 @@
           {assign var=PAYOUT_SYSTEM value=$GLOBAL.config.payout_system}
           {include file="dashboard/overview/default.tpl"}
           {include file="dashboard/round_statistics/$PAYOUT_SYSTEM/default.tpl"}
-          {include file="dashboard/account_data/default.tpl"}
           {if !$DISABLED_API}
           {include file="dashboard/worker_information/default.tpl"}
           {/if}
+		  {include file="dashboard/account_data/default.tpl"}
           {include file="dashboard/blocks/default.tpl"}
           </div>
         </div>

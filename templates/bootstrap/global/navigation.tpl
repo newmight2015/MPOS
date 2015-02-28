@@ -10,7 +10,7 @@
                     </li>
 
                     <li {if $smarty.get.page|default:"0" eq "account"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-user-md fa-fw"></i> My Account<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-briefcase fa-fw"></i> My Account<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                           <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=edit"><i class="fa fa-edit fa-fw"></i> Edit Account</a></li>
                           <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers"><i class="fa fa-wrench fa-fw"></i> My Workers</a></li>
@@ -45,7 +45,7 @@
                           <li {if $smarty.get.action|default:"0" eq "news" || $smarty.get.action|default:"0" eq "newsletter"}class="active"{/if}>
                             <a href="#"><i class="fa fa-info fa-fw"></i> News <span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level">
-                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=news"><i class="fa fa-list-alt fa-fw"></i> Site News</a></li>
+                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=news"><i class="fa fa-newspaper-o fa-fw"></i> Site News</a></li>
                               <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=newsletter"><i class="fa fa-list-alt fa-fw"></i> Newsletter</a></li>
                             </ul>
                           </li>
