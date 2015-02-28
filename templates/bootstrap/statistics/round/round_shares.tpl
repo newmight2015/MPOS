@@ -1,7 +1,7 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-refresh fa-fw"></i> Round Shares
+        <i class="fa fa-spinner fa-fw"></i> Round Shares
       </div>
       <div class="panel-body">
         <div class="table-responsive">

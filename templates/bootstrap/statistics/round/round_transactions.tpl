@@ -1,7 +1,7 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        Round Transactions
+        <i class="fa fa-pie-chart fa-fw"></i> Round Transactions
       </div>
       <div class="panel-body">
         <div class="table-responsive">

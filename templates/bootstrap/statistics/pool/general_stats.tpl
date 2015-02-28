@@ -1,7 +1,7 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-bar-chart-o fa-fw"></i> General Statistics
+        <i class="fa fa-tasks fa-fw"></i> General Statistics
       </div>
       <div class="panel-body no-padding table-responsive">
         <table class="table table-striped table-bordered table-hover">
