@@ -56,7 +56,7 @@
                               <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=reports"><i class="fa fa-list-ol fa-fw"></i> Reports</a></li>
                               <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=registrations"><i class="fa fa-pencil-square-o fa-fw"></i> Registrations</a></li>
                               <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=invitations"><i class="fa fa-user-plus fa-fw"></i> Invitations</a></li>
-                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=poolworkers"><i class="fa fa-desktop fa-fw"></i> Pool Workers</a></li>
+                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=poolworkers"><i class="fa fa-wrench fa-fw"></i> Pool Workers</a></li>
                             </ul>
                           </li>
                         </ul>
@@ -79,7 +79,7 @@
                     <li {if $smarty.get.page|default:"0" eq "gettingstarted" || $smarty.get.page|default:"0" eq "about"}class="active"{/if}>
                         <a href="#"><i class="fa fa-question fa-fw"></i> Help<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=gettingstarted"><i class="fa fa-question fa-fw"></i> Getting Started</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=gettingstarted"><i class="fa fa-info-circle fa-fw"></i> Getting Started</a></li>
                           {acl_check page='about' action='pool' name='<i class="fa fa-info fa-fw"></i> About' acl=$GLOBAL.acl.about.page}
                           {acl_check page='about' action='chat' name='<i class="fa fa-comments-o fa-fw"></i> Web Chat' acl=$GLOBAL.acl.chat.page}
                           {acl_check page='about' action='moot' name='<i class="fa fa-ticket fa-fw"></i> Forum' acl=$GLOBAL.acl.moot.forum}
