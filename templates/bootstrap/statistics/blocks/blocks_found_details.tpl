@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-tasks fa-fw"></i> Last {$BLOCKLIMIT} Blocks Found
+        <i class="fa fa-cubes fa-fw"></i> Last {$BLOCKLIMIT} Blocks Found
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">
