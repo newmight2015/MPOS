@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-tasks fa-fw"></i> Block Statistics
+        <i class="fa fa-cube fa-fw"></i> Block Statistics
       </div>
       <div class="table-responsive">
         <table class="table table-striped table-bordered table-hover">
