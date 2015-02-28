@@ -63,12 +63,12 @@
                 {/if}
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-tachometer fa-fw"> </i>{$GLOBAL.hashrate|number_format:"0"} {$GLOBAL.hashunits.pool}
+                        <i class="fa fa-tachometer fa-fw"></i> {$GLOBAL.hashrate|number_format:"0"} {$GLOBAL.hashunits.pool}
                     </a>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-users fa-fw"> </i>{$GLOBAL.workers|number_format}
+                        <i class="fa fa-users fa-fw"> </i> {$GLOBAL.workers|number_format}
                     </a>
                 </li>
                 <li class="dropdown">
