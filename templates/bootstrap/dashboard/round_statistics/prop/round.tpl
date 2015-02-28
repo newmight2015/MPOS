@@ -18,7 +18,7 @@
           <div class="col-lg-2 col-sm-6">
             <div class="circle-tile fade">
               <div class="circle-tile-heading lightblue">
-                <i class="fa fa-bar-chart-o fa-flip-horizontal fa-fw fa-2x"></i>
+                <i class="fa fa-pie-chart fa-fw fa-2x"></i>
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
@@ -37,10 +37,10 @@
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
-                  <p class="h5" id="b-payout">{$GLOBAL.userdata.estimates.payout|number_format:$PRECISION}</p>
+                  <p class="h5" id="b-payout">{$GLOBAL.userdata.estimates.payout|number_format:$PRECISION} ({$GLOBAL.config.currency})</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">Estimated Payout ({$GLOBAL.config.currency})</p>
+                  <p class="h6">Estimated Payout</p>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@
                   <p class="h5" id="b-nextdiff">{if $GLOBAL.nethashrate > 0}{$NETWORK.EstNextDifficulty|number_format:"2"}{else}n/a{/if}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">Next Difficulty (Estimated){if $GLOBAL.nethashrate > 0}<br/>Change in {$NETWORK.BlocksUntilDiffChange} Blocks{else}No Estimates{/if}</p>
+                  <p class="h6">Next Difficulty {if $GLOBAL.nethashrate > 0}<br/>Change in {$NETWORK.BlocksUntilDiffChange} Blocks{else}No Estimates{/if}</p>
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@
                   <p class="h5" id="b-esttimeperblock">{$NETWORK.EstTimePerBlock|seconds_to_hhmmss}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">Est. Avg. Time per Block</p>
+                  <p class="h6">Average Block Time</p>
                 </div>
               </div>
             </div>
