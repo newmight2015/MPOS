@@ -39,14 +39,14 @@
                             <a href="#"><i class="fa fa-usd fa-fw"></i> Funds <span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level">
                               <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=wallet"><i class="fa fa-money fa-fw"></i> Wallet Info</a></li>
-                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=transactions"><i class="fa fa-tasks fa-fw"></i> Transactions</a></li>
+                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=transactions"><i class="fa fa-list-alt fa-fw"></i> Transactions</a></li>
                             </ul>
                           </li>
                           <li {if $smarty.get.action|default:"0" eq "news" || $smarty.get.action|default:"0" eq "newsletter"}class="active"{/if}>
                             <a href="#"><i class="fa fa-info fa-fw"></i> News <span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level">
                               <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=news"><i class="fa fa-newspaper-o fa-fw"></i> Site News</a></li>
-                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=newsletter"><i class="fa fa-list-alt fa-fw"></i> Newsletter</a></li>
+                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=newsletter"><i class="fa fa-file-text-o fa-fw"></i> Newsletter</a></li>
                             </ul>
                           </li>
                           <li {if $smarty.get.action|default:"0" eq "user" || $smarty.get.action|default:"0" eq "reports" || $smarty.get.action|default:"0" eq "registrations" || $smarty.get.action|default:"0" eq "invitations" || $smarty.get.action|default:"0" eq "poolworkers"}class="active"{/if}>
