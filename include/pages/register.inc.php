@@ -10,7 +10,7 @@ if ($setting->getValue('lock_registration') && $setting->getValue('disable_invit
 } else {
   if ($setting->getValue('recaptcha_enabled') && $setting->getValue('recaptcha_enabled_registrations')) {
     require_once(INCLUDE_DIR . '/lib/recaptchalib.php');
-    $smarty->assign("RECAPTCHA", recaptcha_get_html($setting->getValue('recaptcha_public_key'), null, true));
+    $smarty->assign("RECAPTCHA", recaptcha_get_html($setting->getValue('recaptcha_site_key'), null, true));
   }
   // Load news entries for Desktop site and unauthenticated users
   $smarty->assign("CONTENT", "default.tpl");
