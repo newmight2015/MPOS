@@ -10,7 +10,7 @@ if ($setting->getValue('acl_contactform') == 2) {
 } else {
   if ($setting->getValue('recaptcha_enabled') && $setting->getValue('recaptcha_enabled_contactform')) {
     require_once(INCLUDE_DIR . '/lib/recaptchalib.php');
-    $smarty->assign("RECAPTCHA", recaptcha_get_html($setting->getValue('recaptcha_public_key')));
+    $smarty->assign("RECAPTCHA", recaptcha_get_html($setting->getValue('recaptcha_site_key')));
   }
   // Tempalte specifics
   $smarty->assign("CONTENT", "default.tpl");
