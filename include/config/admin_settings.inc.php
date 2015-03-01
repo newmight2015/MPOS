@@ -452,7 +452,7 @@ $aSettings['recaptcha'][] = array(
   'display' => 're-Captcha Secret Key', 'type' => 'text',
   'size' => 25,
   'default' => 'YOUR_SECRET_KEY',
-  'name' => 'recaptcha_private_key', 'value' => $setting->getValue('recaptcha_private_key'),
+  'name' => 'recaptcha_secret_key', 'value' => $setting->getValue('recaptcha_secret_key'),
   'tooltip' => '.'
 );
 $aSettings['recaptcha'][] = array(
