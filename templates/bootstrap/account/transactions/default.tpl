@@ -34,7 +34,7 @@
   <div class="col-lg-9">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-clock-o fa-fw"></i> Transaction History
+        <i class="fa fa-history fa-fw"></i> Transaction History
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">
