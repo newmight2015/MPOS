@@ -11,7 +11,7 @@ if ($setting->getValue('recaptcha_enabled') && $setting->getValue('recaptcha_ena
     ( (isset($_POST["recaptcha_challenge_field"])) ? $_POST["recaptcha_challenge_field"] : null ),
     ( (isset($_POST["recaptcha_response_field"])) ? $_POST["recaptcha_response_field"] : null )
   );
-  $smarty->assign("RECAPTCHA", recaptcha_get_html($setting->getValue('recaptcha_public_key'), $rsp->error, true));
+  $smarty->assign("RECAPTCHA", recaptcha_get_html($setting->getValue('recaptcha_site_key'), $rsp->error, true));
   if (!$rsp->is_valid) $_SESSION['POPUP'][] = array('CONTENT' => 'Invalid Captcha, please try again.', 'TYPE' => 'alert alert-danger');
   $recaptcha = ($rsp->is_valid) ? 1 : 0;
 }
