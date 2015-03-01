@@ -12,9 +12,9 @@ if ($setting->getValue('recaptcha_enabled') && $setting->getValue('recaptcha_ena
       ( (isset($_POST["recaptcha_challenge_field"])) ? $_POST["recaptcha_challenge_field"] : null ),
       ( (isset($_POST["recaptcha_response_field"])) ? $_POST["recaptcha_response_field"] : null )
     );
-    $smarty->assign("RECAPTCHA", recaptcha_get_html($setting->getValue('recaptcha_public_key'), $rsp->error, true));
+    $smarty->assign("RECAPTCHA", recaptcha_get_html($setting->getValue('recaptcha_site_key'), $rsp->error, true));
   } else {
-    $smarty->assign("RECAPTCHA", recaptcha_get_html($setting->getValue('recaptcha_public_key'), null, true));
+    $smarty->assign("RECAPTCHA", recaptcha_get_html($setting->getValue('recaptcha_site_key'), null, true));
   }
 }
 
