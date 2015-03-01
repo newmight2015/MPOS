@@ -459,8 +459,8 @@ $aSettings['recaptcha'][] = array(
   'display' => 're-Captcha Site Key', 'type' => 'text',
   'size' => 25,
   'default' => 'YOUR_SITE_KEY',
-  'name' => 'recaptcha_public_key', 'value' => $setting->getValue('recaptcha_public_key'),
-  'tooltip' => 'Your public key as given by your re-Captcha account.'
+  'name' => 'recaptcha_site_key', 'value' => $setting->getValue('recaptcha_site_key'),
+  'tooltip' => 'Your site key as given by your re-Captcha account.'
 );
 $aSettings['monitoring'][] = array(
   'display' => 'Uptime Robot Private API Key', 'type' => 'text',
