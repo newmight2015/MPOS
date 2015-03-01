@@ -10,7 +10,6 @@
             <thead>
               <tr>
                 <th>Worker Name</th>
-                <th>Password</th>
                 <th>Active</th>
                 {if $GLOBAL.config.disable_notifications != 1 && $DISABLE_IDLEWORKERNOTIFICATIONS != 1}<th>Monitor</th>{/if}
                 <th>Khash/s</th>
@@ -23,7 +22,6 @@
             <tbody>
               <tr>
                 <td>{$WORKERS[worker].username|escape}</td>
-                <td>{$WORKERS[worker].password|escape}</td>
                 <td align="center"><i class="fa fa-{if $WORKERS[worker].hashrate > 0}check{else}times{/if} fa-fw"></i></td>
                 {if $GLOBAL.config.disable_notifications != 1 && $DISABLE_IDLEWORKERNOTIFICATIONS != 1}
                 <td align="center"><i class="fa fa-{if $WORKERS[worker].monitor}check{else}times{/if} fa-fw"></i></td>
