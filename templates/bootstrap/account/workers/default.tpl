@@ -27,7 +27,7 @@
   <div class="col-lg-9">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-gears fa-fw"></i> Worker Configuration
+        <i class="fa fa-wrench fa-fw"></i> Worker Configuration
       </div>
       <form action="{$smarty.server.SCRIPT_NAME}" method="post" role="form">
         <input type="hidden" name="page" value="{$smarty.request.page|escape}">
