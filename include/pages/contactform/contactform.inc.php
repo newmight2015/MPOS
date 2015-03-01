@@ -6,7 +6,7 @@ if ($setting->getValue('recaptcha_enabled') && $setting->getValue('recaptcha_ena
   require_once(INCLUDE_DIR . '/lib/recaptchalib.php');
   // Load re-captcha specific data
   $rsp = recaptcha_check_answer (
-    $setting->getValue('recaptcha_private_key'),
+    $setting->getValue('recaptcha_secret_key'),
     $_SERVER["REMOTE_ADDR"],
     ( (isset($_POST["recaptcha_challenge_field"])) ? $_POST["recaptcha_challenge_field"] : null ),
     ( (isset($_POST["recaptcha_response_field"])) ? $_POST["recaptcha_response_field"] : null )
