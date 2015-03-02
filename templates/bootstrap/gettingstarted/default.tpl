@@ -23,7 +23,7 @@
     </li>
     <p>3. <strong>Configure your mining software.</strong></p>
     <ul>
-      	<p>At this stage your hardware should be connected and powered on. Let's now configure your mining software. We'll aim to produce a simple, reusable "start up" file. Once we're done, you'll simply double-click on this file to launch your software. This section looks long, but it is not as difficult as it seems. If you are confused about the instructions, look at the included screen captures for guidance, and be sure to double check the details of each step.</p>
+      	<p>At this stage your hardware should be connected and powered on. Let's now configure your mining software. We'll aim to produce a simple, reusable "start up" file. Once we're done, you'll simply double-click on this file to launch your software. This section looks long, but it is not as difficult as it seems. If you are confused about the instructions please be sure to double check the details of each step.</p>
 	<p>You'll need your credentials (called "worker" info) and some pool information to configure your mining software. Open your preferred text editor, such as Notepad, Notepad++, Vim, or gedit. We'll show the specifics of Notepad, but the steps are very similar for others.
       	<p>Type the following, replacing the example user info with that of your own.</p>
       	<strong>BFGMiner</strong>
