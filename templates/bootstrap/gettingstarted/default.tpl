@@ -12,43 +12,31 @@
         <li>Create a <a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers">worker</a> that will be used by the miner to login</li>
       </ul>
     </li>
-    <p>2. <strong>Download a miner.</strong></p>
+    <p>2. <strong>Download mining software.</strong></p>
       <ul>
-        {if $GLOBAL.config.algorithm == 'sha256d'}
-        <li><em>Intel/ATI/AMD CGMiner Windows:</em> <a href="http://ck.kolivas.org/apps/cgminer/cgminer-4.2.2-windows.zip" target="_blank">Download here</a></li>
-        <li><em>Intel/ATI/AMD CGMiner Linux:</em> <a href="http://ck.kolivas.org/apps/cgminer/cgminer-4.2.2.tar.bz2" target="_blank">Download Here</a></li>
-	{/if}
-	{if $GLOBAL.config.algorithm == 'scrypt'}
-	<li><em>Intel/ATI/AMD CGMiner (3.7.2) Windows:</em> <a href="https://mega.co.nz/#!iQhlGIxa!mzKOfLY6TpOfvPvWE6JFlWdRgHEoshzm99f1hd3ZdRw" target="_blank">Download here</a></li>	
-	<li><em>Intel/ATI/AMD CGMiner (3.7.2) Linux:</em> <a href="http://ck.kolivas.org/apps/cgminer/3.7/cgminer-3.7.0.tar.bz2" target="_blank">Download Here</a></li>	
-	<li><em>NVIDIA Cudaminer:</em><a href="https://bitcointalk.org/index.php?topic=167229.0" target="_blank"> Download here</a></li>
-	{/if}
-	<li><em>Intel/ATI/AMD BFGMiner Linux/Windows:</em> <a href="http://bfgminer.org" target="_blank">Download here</a></li>
-        <li><em>Fabulous Panda Miner Mac OS X:</em> <a href="http://fabulouspanda.co.uk/macminer/" target="_blank">Download here</a></li>
-        <li><em>Minerd CPU Miner Mac/Linux/Windows:</em><a href="https://bitcointalk.org/index.php?topic=55038.msg654850#msg654850" target="_blank"> Download here</a>.</li>
+		<p>The choice of mining software to use is up to you. CGMiner and BFGMiner are two of the most popular choices. Their output and set up are very similar, and we'll show in the next step how to set up either.</p>
+        <p>Download the mining software of your choice from one of the links below:</p>
+		<li><em>BFGMiner</em> <a href="http://bfgminer.org" target="_blank">Download here</a></li>
+		<li><em>CGMiner</em> <a href="http://ck.kolivas.org/apps/cgminer/cgminer-4.2.2-windows.zip" target="_blank">Download here</a></li>
+		<p>Once your download is completed, unzip or extract the files to your desktop, or preferred folder.</p>
       </ul>
     </li>
-    <p>3. <strong>Configure your miner.</strong></p>
+    <p>3. <strong>Configure your mining software.</strong></p>
     <ul>
-      <p>If your using Linux, Then type the following into the console:</p>
-      <li>CGMiner</li>
-      <pre>./cgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      <li>BFGMiner</li>
-      <pre>./bfgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      <br />
-	  <p> If you want to mine on a <strong> Windows Operating System</strong>, then you'll need to create a batch file to start your miner. </p><p> Simply open notepad and then copy and paste the following:</p>
+      <p>At this stage your hardware should be connected and powered on. Let's now configure your mining software. We'll aim to produce a simple, reusable "start up" file. Once we're done, you'll simply double-click on this file to launch your software. This section looks long, but it is not as difficult as it seems. If you are confused about the instructions, look at the included screen captures for guidance, and be sure to double check the details of each step.</p>
+	  <p>You'll need your credentials (called "worker" info) and some pool information to configure your mining software. Open your preferred text editor, such as Notepad, Notepad++, Vim, or gedit. We'll show the specifics of Notepad, but the steps are very similar for others.
+      <p>Type the following, replacing the example user info with that of your own.</p>
+	  <li>BFGMiner</li>
+      <pre>bfgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
       <li>CGMiner</li>
       <pre>cgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      <li>BFGMiner</li>
-      <pre>bfgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      <li>MinerD</li>
-      <pre>minerd -a {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-t 6 -s 4 -o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      {if $GLOBAL.config.algorithm == 'scrypt'}
-      <li>Cudaminer For NVIDIA Cards</li>
-	  <pre>cudaminer -o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
-      {/if}
+      <p>Double check you've entered the appropriate credentials and url, then save the file. This is not just a text file, though. On Windows you'll need to save the file with the ".bat" extension.</p>
+	  <p>To do this in Notepad: Click on File, then Save As</p>
+	  <p>Next to "Save as type", open the drop-down menu and select "All Files" instead of "Text Documents(*.txt). Next to "File Name", enter "StartMining.bat", without quotes! Double check that Save as type is not "Text Documents", and click save.</p>
+	  <p>For ease later, move "StartMining.bat" to the folder containing your mining software files.</p>
+	  <p>Note for Linux users: instead of StartMining.bat, name your file StartMining.sh. After you save it, right click the file, click on "Properties", then under the "Permissions" tab tick the box for "Allow executing file as program". This will allow you to double-click the file to launch your mining software.
 	  <br />
-	  <p> You then need to change "-u Weblogin.Worker -p Worker password" to reflect your own account. Eg, "-u Steve.StevesWorker -p StevesWorkerPassword" then go to "File > Save as" and save the file as "RunMe.bat" in the same folder containing your miners application files. You are now ready to mine, double click on "RunMe.bat" to start mining. If you want, you can create additional workers with usernames and passwords of your choice <a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers">here</a></p>
+	  <p>Double click on your StartMining batch file.</p>
     </ul>
     <p>4. <strong>Create a {$SITECOINNAME|default:"Litecoin"} address to receive payments.</strong></p>
       <ul>
