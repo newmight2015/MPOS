@@ -16,8 +16,9 @@
       <ul>
 	<p>The choice of mining software to use is up to you. CGMiner and BFGMiner are two of the most popular choices. Their output and set up are very similar, and we'll show in the next step how to set up either.</p>
         <p>Download the mining software of your choice from one of the links below:</p>
-	<li><em>BFGMiner</em> <a href="http://bfgminer.org" target="_blank">Download here</a></li>
-	<li><em>CGMiner</em> <a href="http://ck.kolivas.org/apps/cgminer/cgminer-4.2.2-windows.zip" target="_blank">Download here</a></li>
+        <br />
+	<li>BFGMiner <a href="http://bfgminer.org" target="_blank">Download here</a></li>
+	<li>CGMiner <a href="http://ck.kolivas.org/apps/cgminer/" target="_blank">Download here</a></li>
 	<br />
 	<p>Once your download is completed, unzip or extract the files to your desktop, or preferred folder.</p>
       </ul>
