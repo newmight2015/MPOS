@@ -6,7 +6,7 @@
     <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-gear fa-fw"></i> Notification Settings
+        <i class="fa fa-bullhorn fa-fw"></i> Notification Settings
       </div>
       <div class="panel-body no-padding">
         <table class="table table-striped table-bordered table-hover">
@@ -72,7 +72,7 @@
   <div class="col-lg-8">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-clock-o fa-fw"></i> Notification History
+        <i class="fa fa-history fa-fw"></i> Notification History
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">

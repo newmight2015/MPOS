@@ -27,7 +27,7 @@
   <div class="col-lg-8">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-mail-reply fa-fw"></i> Past Invitations
+        <i class="fa fa-history fa-fw"></i> Past Invitations
       </div>
       <div class="panel-body">
       

@@ -6,7 +6,7 @@
     <div class="col-lg-12">
       <div class="panel panel-info">
         <div class="panel-heading">
-          Earnings Information
+          <i class="fa fa-list-ol fa-fw"></i> Earnings Information
         </div>
         <div class="panel-body">
           <div class="table-responsive">

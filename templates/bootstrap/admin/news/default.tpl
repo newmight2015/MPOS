@@ -46,7 +46,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-info fa-fw"></i> {$NEWS[news].header}</a>
+        <i class="fa fa-bookmark fa-fw"></i> {$NEWS[news].header}</a>
         <br />
         <font size="1px">posted {$NEWS[news].time|date_format:$GLOBAL.config.date}{if $HIDEAUTHOR|default:"0" == 0} by <b>{$NEWS[news].author}</b>{/if}</font>
       </div>

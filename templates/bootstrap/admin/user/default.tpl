@@ -79,7 +79,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-info fa-fw"></i> User Information
+        <i class="fa fa-users fa-fw"></i> User Information
       </div>
       <div class="panel-body">
         <div class="table-responsive">
