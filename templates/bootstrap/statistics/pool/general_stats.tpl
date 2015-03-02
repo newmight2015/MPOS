@@ -27,7 +27,7 @@
               {/if}
             </tr>
             <tr>
-              <th>Est. Next Difficulty</th>
+              <th>Next Difficulty (Estimated)</th>
               {if ! $GLOBAL.website.chaininfo.disabled}
               <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new">{$NETWORK.EstNextDifficulty|number_format:"2"} (Change in {$NETWORK.BlocksUntilDiffChange} Blocks)</a></td>
               {else}
@@ -35,15 +35,15 @@
               {/if}
             </tr>
             <tr>
-              <th>Est. Avg. Time per Round (Network)</th>
+              <th>Estimated Average Time per Round (Network)</th>
               <td>{$NETWORK.EstTimePerBlock|seconds_to_words}</td>
             </tr>
             <tr>
-              <th>Est. Avg. Time per Round (Pool)</th>
+              <th>Estimated Average Time per Round (Pool)</th>
               <td>{$ESTTIME|seconds_to_words}</td>
             </tr>
             <tr>
-              <th>Est. Shares this Round</th>
+              <th>Estimated Shares this Round</th>
               <td id="b-target">{$ESTIMATES.shares|number_format} (done: {$ESTIMATES.percent}%)</td>
             </tr>
             {if ! $GLOBAL.website.blockexplorer.disabled}
