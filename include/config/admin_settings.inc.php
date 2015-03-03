@@ -302,13 +302,6 @@ $aSettings['acl'][] = array(
   'tooltip' => 'Make the chat page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
-  'display' => 'MOOT Forum Page', 'type' => 'select',
-  'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
-  'default' => 2,
-  'name' => 'acl_moot_forum', 'value' => $setting->getValue('acl_moot_forum'),
-  'tooltip' => 'Make the forum page private (users only) or public.'
-);
-$aSettings['acl'][] = array(
   'display' => 'QRCode', 'type' => 'select',
   'options' => array( 0 => 'Enabled', 1 => 'Disabled' ),
   'default' => 0,
