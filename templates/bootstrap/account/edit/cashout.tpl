@@ -21,7 +21,7 @@
             </div>
             <div class="form-group">
               <label>Account Balance</label>
-              {nocache}<input class="form-control" id="disabledInput" type="text" value="{$GLOBAL.userdata.balance.confirmed|number_format:"8"|escape}" {$GLOBAL.config.currency} disabled />{/nocache}
+              {nocache}<input class="form-control" id="disabledInput" type="text" value="{$GLOBAL.userdata.balance.confirmed|escape}" {$GLOBAL.config.currency} disabled />{/nocache}
             </div>
             <div class="form-group">
               <label>Payout to</label>

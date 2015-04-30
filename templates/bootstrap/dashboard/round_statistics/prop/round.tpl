@@ -37,7 +37,7 @@
               </div>
               <div class="circle-tile-content lightblue">
                 <div class="circle-tile-description text-faded">
-                  <p class="h5" id="b-payout">{$GLOBAL.userdata.estimates.payout|number_format:$PRECISION} ({$GLOBAL.config.currency})</p>
+                  <p class="h5" id="b-payout">{$GLOBAL.userdata.estimates.payout|number_format:$PRECISION}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
                   <p class="h6">Estimated Payout</p>
