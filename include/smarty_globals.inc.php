@@ -257,4 +257,3 @@ if ($bMessage)
 $smarty->assign('PATH', 'site_assets/' . THEME);
 $smarty->assign('GLOBALASSETS', 'site_assets/global');
 $smarty->assign('GLOBAL', $aGlobal);
-?>
