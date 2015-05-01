@@ -7,7 +7,7 @@ $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
  *  https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-config-version
  **/
 $config['version'] = '1.0.1';
-$config['version_url'] = 'https://raw.githubusercontent.com/MPOS/php-mpos/master/include/version.inc.php';
+$config['version_url'] = 'https://raw.githubusercontent.com/daygle/MPOS/master/include/version.inc.php';
 
 /**
  * Unless you disable this, we'll do a quick check on your config first.
