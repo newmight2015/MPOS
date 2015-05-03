@@ -99,6 +99,22 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
+					{if $GLOBAL.config.poolnav_enabled|default:"false"}
+                    <li>
+                        <a href="#"><i class="fa fa-play-circle-o fa-fw"></i> Other Pools<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+						  {assign var="PoolArray" value="\n"|explode:$GLOBAL.config.poolnav_pools}
+						  {foreach from=$PoolArray item=pooldata}
+						  {assign var="PoolURL" value="|"|explode:$pooldata}
+						  {if $PoolURL|count > 1}
+						  <li><a href="{$PoolURL[1]}"><i class="fa fa-angle-double-right fa-fw"></i> {$PoolURL[0]}</a></li>
+						  {/if}
+						  {/foreach}
+						</ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+					{else}
+					{/if}
                 </ul>
                 <!-- /#side-menu -->
             </div>
