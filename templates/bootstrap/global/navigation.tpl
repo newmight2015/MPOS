@@ -101,7 +101,7 @@
                     </li>
 					{if $GLOBAL.config.poolnav_enabled|default:"false"}
                     <li>
-                        <a href="#"><i class="fa fa-play-circle-o fa-fw"></i> Other Pools<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-play-circle-o fa-fw"></i> Mining Pools<span class="fa arrow"></span></a>
 						<ul class="nav nav-second-level">
 						  {assign var="PoolArray" value="\n"|explode:$GLOBAL.config.poolnav_pools}
 						  {foreach from=$PoolArray item=pooldata}
