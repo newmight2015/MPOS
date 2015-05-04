@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "Please be aware: This cron is deprecated and will be removed. Please read: https://github.com/MPOS/php-mpos/wiki/Cronjobs#setup"
-sleep 2
-
 #########################
 #                       #
 # Configuration Options #
