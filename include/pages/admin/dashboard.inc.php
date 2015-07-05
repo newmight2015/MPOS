@@ -14,13 +14,6 @@ if ($bitcoin->can_connect() === true){
   $_SESSION['POPUP'][] = array('CONTENT' => 'Unable to connect to wallet RPC service: ' . $bitcoin->can_connect(), 'TYPE' => 'alert alert-danger');
 }
 
-// version check and config check if not disabled
-if (@$_SESSION['USERDATA']['is_admin'] && $user->isAdmin(@$_SESSION['USERDATA']['id'])) {
-  if (!@$config['skip_config_tests']) {
-    require_once(INCLUDE_DIR . '/admin_checks.php');
-  }
-}
-
 // Grab versions from Online source
 require_once(CLASS_DIR . '/tools.class.php');
 $online_versions = $tools->getOnlineVersions();
