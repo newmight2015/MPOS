@@ -6,7 +6,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{$smarty.server.SCRIPT_NAME}">{$GLOBAL.website.name}</a>
+                <a href="/index.php"><img border="0" alt="TheCoin.pw" src="thecoin.png" width="300" height="100"></a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
@@ -45,14 +45,12 @@
                 </li>
                 {/if}
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-tachometer fa-fw"></i> {$GLOBAL.hashrate|number_format:"0"} {$GLOBAL.hashunits.pool}
-                    </a>
+                    <a class="dropdown-toggle" href="{$smarty.server.SCRIPT_NAME}?page=statistics&action=pool">
+                    <i class="fa fa-tachometer fa-fw"></i> {$GLOBAL.hashrate|number_format:"0"} {$GLOBAL.hashunits.pool}</a>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-users fa-fw"> </i> {$GLOBAL.workers|number_format}
-                    </a>
+                    <a class="dropdown-toggle" href="{$smarty.server.SCRIPT_NAME}?page=statistics&action=pool">
+                    <i class="fa fa-users fa-fw"></i> {$GLOBAL.workers|number_format}</a>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
