@@ -21,11 +21,66 @@
 	<p>Once your download is completed, unzip or extract the files to your desktop, or preferred folder.</p>
       </ul>
     </li>
-    <p>3. <strong>Configure your mining software.</strong></p>
+	<p>3. <strong>Select a difficulty.</strong></p>
+    <ul>
+      	<p>The below table displays available difficulties to mine with. If unsure of the difficulty level to select it is recommended to mine with variable difficulty.</p>
+			<table border="1" style="width:50%">
+				<tbody><tr>
+					<td bgcolor="#666666"><font color="white"><strong>Mining Difficulty</strong></font></td> 
+					<td bgcolor="#666666"><font color="white"><strong>Stratum Connection String</strong></font></td>
+				</tr>
+				<tr>
+					<td>8</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{{$SITESTRATUMPORT|default:"3333"}-10}</td>
+				</tr>
+				<tr>
+					<td>16</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{{$SITESTRATUMPORT|default:"3333"}-9}</td>
+				</tr>
+				<tr>
+					<td>32</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{{$SITESTRATUMPORT|default:"3333"}-8}</td>
+				</tr>
+				<tr>
+					<td>64</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{{$SITESTRATUMPORT|default:"3333"}-7}</td>
+				</tr>
+				<tr>
+					<td>128</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{{$SITESTRATUMPORT|default:"3333"}-6}</td>
+				</tr>
+				<tr>
+					<td>256</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{{$SITESTRATUMPORT|default:"3333"}-5}</td>
+				</tr>
+				<tr>
+					<td>512</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{{$SITESTRATUMPORT|default:"3333"}-4}</td>
+				</tr>
+				<tr>
+					<td>1024</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{{$SITESTRATUMPORT|default:"3333"}-3}</td>
+				</tr>
+				<tr>
+					<td>2048</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{{$SITESTRATUMPORT|default:"3333"}-2}</td>
+				</tr>
+				<tr>
+					<td>4096</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{{$SITESTRATUMPORT|default:"3333"}-1}</td>
+				</tr>
+				<tr>
+					<td>Variable</td> 
+					<td>stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"}</td>
+				</tr>
+			</tbody>
+		</table>
+    </ul>
+    <p>4. <strong>Configure your mining software.</strong></p>
     <ul>
       	<p>At this stage your hardware should be connected and powered on. Let's now configure your mining software. We'll aim to produce a simple, reusable "start up" file. Once we're done, you'll simply double-click on this file to launch your software. This section looks long, but it is not as difficult as it seems. If you are confused about the instructions please be sure to double check the details of each step.</p>
-	<p>You'll need your credentials (called "worker" info) and some pool information to configure your mining software. Open your preferred text editor, such as Notepad, Notepad++, Vim, or gedit. We'll show the specifics of Notepad, but the steps are very similar for others.
-      	<p>Type the following, replacing the example user info with that of your own.</p>
+		<p>You'll need your credentials (called "worker" info) and some pool information to configure your mining software. Open your preferred text editor, such as Notepad, Notepad++, Vim, or gedit. We'll show the specifics of Notepad, but the steps are very similar for others.
+      	<p>In the below example we will use the variable difficulty stratum connection string, don't forget to replace the example worker info with that of your own.</p>
       	<strong>BFGMiner</strong>
       	<pre>bfgminer {if $GLOBAL.config.algorithm == 'scrypt'}--scrypt {/if}-o stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"} -u <em>Weblogin</em>.<em>WorkerName</em> -p <em>WorkerPassword</em></pre>
       	<strong>CGMiner</strong>
@@ -38,7 +93,7 @@
 	<br />
 	<p>Double click on your StartMining batch file.</p>
     </ul>
-    <p>4. <strong>Create a {$SITECOINNAME|default:"Litecoin"} address to receive payments.</strong></p>
+    <p>5. <strong>Create a {$SITECOINNAME|default:"Litecoin"} address to receive payments.</strong></p>
       <ul>
         <li> Downloading the client and block chain: Download the {$SITECOINNAME|default:"Litecoin"} client from <a href="{$SITECOINURL|default:"http://www.litecoin.org"}" target="_blank">here</a>.
           <p>Generate a new address and input it on your account page to receive payments.</p>
@@ -46,7 +101,7 @@
       </ul>
     </li>
     {if $GLOBAL.config.algorithm == 'scrypt'}
-    <p>5. <strong>Advanced CGMiner settings / FAQ</strong></p>
+    <p>6. <strong>Advanced CGMiner settings / FAQ</strong></p>
       <ul>
         <li><a href="https://raw.github.com/ckolivas/cgminer/v3.7.2/SCRYPT-README" target="_blank">Scrypt readme</a></li>
         <li>Don't set <b>intensity</b> too high, I=11 is standard and safest. Higher intensity takes more GPU RAM. Check for <b>hardware errors</b> in CGMiner (HW). HW=0 is good, otherwise lower intensity.</li>
