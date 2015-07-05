@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `coin_addresses` (
   `account_id` int(11) NOT NULL,
   `currency` varchar(5) NOT NULL,
   `coin_address` varchar(255) NOT NULL,
-  `ap_threshold` float DEFAULT '0',
+  `ap_threshold` float DEFAULT '500',
   PRIMARY KEY (`id`),
   UNIQUE KEY `coin_address` (`coin_address`),
   KEY `account_id` (`account_id`)
