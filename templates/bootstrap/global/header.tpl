@@ -6,7 +6,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/index.php"><img border="0" alt="TheCoin.pw" src="thecoin.png" width="300" height="100"></a>
+                <a href="/index.php"><img alt="TheCoin.pw" src="thecoin.png"></a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
