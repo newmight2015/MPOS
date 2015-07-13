@@ -88,6 +88,20 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
+                    <li {if $smarty.get.page|default:"0" eq "register" || $smarty.get.page|default:"0" eq "login" || $smarty.get.page|default:"0" eq "logout" || $smarty.get.page|default:"0" eq "tac" || $smarty.get.page|default:"0" eq "contactform"}class="active"{/if}>
+                        <a href="#"><i class="fa fa-asterisk fa-fw"></i> Other<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                          {if $smarty.session.AUTHENTICATED|default:"0" == 1}
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                          {else}
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=login"><i class="fa fa-sign-in fa-fw"></i> Login</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=register"><i class="fa fa-pencil fa-fw"></i> Sign Up</a></li>
+                          {/if}
+                          {acl_check page='contactform' action='' name='<i class="fa fa-envelope fa-fw"></i> Contact' acl=$GLOBAL.acl.contactform}
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=tac"><i class="fa fa-book fa-fw"></i> Terms and Conditions</a></li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
 					{if $GLOBAL.config.poolnav_enabled|default:"false"}
                     <li>
                         <a href="#"><i class="fa fa-play-circle-o fa-fw"></i> Mining Pools<span class="fa arrow"></span></a>
