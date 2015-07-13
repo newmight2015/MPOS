@@ -82,6 +82,7 @@
                         <ul class="nav nav-second-level">
                           <li><a href="{$smarty.server.SCRIPT_NAME}?page=gettingstarted"><i class="fa fa-info-circle fa-fw"></i> Getting Started</a></li>
                           {acl_check page='about' action='pool' name='<i class="fa fa-info fa-fw"></i> About' acl=$GLOBAL.acl.about.page}
+						  <li><a href="http://support.thecoin.pw/"><i class="fa fa-info-circle fa-fw"></i> Contact/Support</a></li>
                           {acl_check page='about' action='chat' name='<i class="fa fa-comments-o fa-fw"></i> Web Chat' acl=$GLOBAL.acl.chat.page}
                         </ul>
                         <!-- /.nav-second-level -->
