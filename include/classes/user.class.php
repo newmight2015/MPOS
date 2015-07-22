@@ -31,11 +31,9 @@ class User extends Base {
   public function getUserName($id) {
     return $this->getSingle($id, 'username', 'id');
   }
-
   public function getUserNameAnon($id) {
     return $this->getSingle($id, 'is_anonymous', 'id');
   }
-
   public function getUserNameByEmail($email) {
     return $this->getSingle($email, 'username', 'email', 's');
   }
@@ -191,7 +189,7 @@ class User extends Base {
       return $result->fetch_all(MYSQLI_ASSOC);
     }
   }
-  
+
   /**
    * Check user login
    * @param username string Username
@@ -720,7 +718,8 @@ class User extends Base {
     if ($this->checkStmt($stmt) && $stmt->bind_param('i', $userID) && $stmt->execute() && $result = $stmt->get_result()) {
       $aData = $result->fetch_assoc();
       $aData['coin_address'] = $this->coin_address->getCoinAddress($userID);
-      $aData['ap_threshold'] = $this->coin_address->getAPThreshold($userID);
+      if (! $aData['ap_threshold'] = $this->coin_address->getAPThreshold($userID))
+        $aData['ap_threshold'] = 0;
       $stmt->close();
       return $aData;
     }
